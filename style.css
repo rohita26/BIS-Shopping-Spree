@@ -1,0 +1,337 @@
+/* Full-screen Background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: rgb(255, 255, 255);
+    background: url('images/bisbg.png') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.home-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: url('images/background.jpg') no-repeat center center fixed;;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+/* Info Box Styling */
+.info-box {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 15px;
+    width: 60%;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+h1, h2 {
+    z-index: 2;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Button Styling */
+button {
+    z-index: 2;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #ff000083;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff000083;
+}
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: auto;
+}
+
+#leaderboard p {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+/* Center everything */
+.container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Leaderboard Title */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Score items */
+p {
+    font-size: 20px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 50%;
+    max-width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation - fade in effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Reset button */
+.reset-btn {
+    background: #ff000083;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    background: #1887e8;
+}
+/* Apply BIS Official Theme */
+body {
+    background: url('images/bisbg.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* Dark overlay for readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+/* Default button style */
+.animated-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #ff000083;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    animation: fadeIn 2s ease-in-out;
+    margin: 10px;
+}
+
+/* Hover animation */
+.animated-btn:hover {
+    background: #ff000083;
+    transform: scale(1.1);
+}
+
+/* Click effect */
+.animated-btn:active {
+    transform: scale(0.9);
+}
+/* Style for product items */
+.product {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.product:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Selected product animation */
+.selected {
+    animation: popEffect 0.5s ease-out;
+}
+
+@keyframes popEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+/* Wrong product shake effect */
+.wrong {
+    animation: shakeEffect 0.4s ease-in-out;
+}
+
+@keyframes shakeEffect {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+/* BIS Logo Watermark */
+.watermark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    opacity: 0.3;
+    z-index: 999;
+}
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(45deg, #007bff, #00c853); }
+    50% { background: linear-gradient(45deg, #ff4081, #ff9100); }
+    100% { background: linear-gradient(45deg, #007bff, #00c853); }
+}
+/* BIS Logo Styling */
+.logo {
+    width: 150px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Title Animation */
+.animated-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+/* Game Info */
+.game-info {
+    font-size: 18px;
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+/* Animated Buttons */
+.animated-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #ff000083;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    animation: fadeIn 2s ease-in-out;
+    margin: 10px;
+}
+
+/* Button Hover Effect */
+.animated-btn:hover {
+    background: #ff000083;
+    transform: scale(1.1);
+}
+
+/* Keyframe Animations */
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.basket-container {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 150px;
+    height: 150px;
+}
+
+#basket {
+    width: 100%;
+}
+
+/* Animation when product is collected */
+@keyframes moveToBasket {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(200px, -100px) scale(0.5); /* Moves and shrinks */
+        opacity: 0;
+    }
+}
+
+/* Non-BIS product shakes */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+.wrong {
+    animation: shake 0.3s ease-in-out;
+}
