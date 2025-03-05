@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIS Shopping Spree - Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🛍 BIS Shopping Spree</h1>
+            <p>Collect all the BIS-certified products before time runs out!</p>
+            <div class="score-timer">
+                <span id="score">Score: 0</span>
+                <span id="timer">Time Left: 30s</span>
+            </div>
+        </div>
+
+        <div class="shopping-area">
+            <img id="player" src="player.png" alt="Player">
+            <div id="products"></div>
+        </div>
+
+        <div class="cart">
+            <h2>Your Cart 🛒</h2>
+            <div id="cart-items"></div>
+        </div>
+    </div>
+    <div class="game-container">
+        <div id="product-list"></div> <!-- Products appear here -->
+        
+        <div class="basket-container">
+            <img src="images/basket.png" id="basket" alt="Basket">
+            <div id="basket-items"></div> <!-- BIS products go here -->
+        </div>
+        
+        <p id="score">Score: 0</p>
+    </div>
+    
+
+    <script src="game.js"></script>
+</body>
+</html>
